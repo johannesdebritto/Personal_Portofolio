@@ -30,7 +30,7 @@ const projects = [
   {
     id: 4,
     image: "/images/porto/map.png",
-    title: "SmartMap",
+    title: "AzimuthTracker",
     description: "A web-based azimuth tracking tool.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/AZIMUTHTRACKER",
@@ -38,7 +38,7 @@ const projects = [
   {
     id: 5,
     image: "/images/porto/scan.png",
-    title: "QR Scanner",
+    title: "Scan Event",
     description: "A mobile app to scan items at events.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/ScanBarang_Frontend",
@@ -46,7 +46,7 @@ const projects = [
   {
     id: 6,
     image: "/images/porto/sehat.png",
-    title: "SehatNow",
+    title: "JuniorCare",
     description: "An app for buying and ordering medicine.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/TubesMobilePrograming_JUNIORCARE",
