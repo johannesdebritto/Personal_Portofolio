@@ -20,10 +20,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   const handleLinkClick = () => {
@@ -73,11 +70,11 @@ const Navbar = () => {
           <Link href="#testimoni" onClick={handleLinkClick}>
             <button className="text-white text-xl hover:text-purple-500 duration-200 hover:scale-110 transition-transform">Testimoni</button>
           </Link>
-          <Link href="#contact" onClick={handleLinkClick}>
+          <a href="https://wa.me/6285602813201" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
             <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 hover:scale-110 transition-transform">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">Contact Me</span>
             </button>
-          </Link>
+          </a>
         </div>
 
         {/* Normal Menu for Desktop */}
@@ -89,7 +86,6 @@ const Navbar = () => {
               <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-200 h-0.5 bg-indigo-600 group-hover:w-3/6"></span>
             </button>
           </Link>
-
           <Link href="#about" className="group">
             <button className="text-white cursor-pointer duration-200 hover:scale-110 transition-transform hover:shadow-lg hover:text-purple-500 relative">
               <span>About</span>
@@ -97,7 +93,6 @@ const Navbar = () => {
               <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-200 h-0.5 bg-indigo-600 group-hover:w-3/6"></span>
             </button>
           </Link>
-
           <Link href="#resume" className="group">
             <button className="text-white cursor-pointer duration-200 hover:scale-110 transition-transform hover:shadow-lg hover:text-purple-500 relative">
               <span>Resume</span>
@@ -105,7 +100,6 @@ const Navbar = () => {
               <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-200 h-0.5 bg-indigo-600 group-hover:w-3/6"></span>
             </button>
           </Link>
-
           <Link href="#project" className="group">
             <button className="text-white cursor-pointer duration-200 hover:scale-110 transition-transform hover:shadow-lg hover:text-purple-500 relative">
               <span>Project</span>
@@ -113,12 +107,11 @@ const Navbar = () => {
               <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-200 h-0.5 bg-indigo-600 group-hover:w-3/6"></span>
             </button>
           </Link>
-
-          <Link href="#contact">
+          <a href="https://wa.me/6285602813201" target="_blank" rel="noopener noreferrer">
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 hover:scale-110 transition-transform">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">Contact Me</span>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
