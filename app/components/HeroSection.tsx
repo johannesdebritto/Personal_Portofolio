@@ -10,9 +10,9 @@ const HeroSection: React.FC = () => {
         <p className="text-gray-500 uppercase mb-4">Hello, My Name is</p>
         <h1 className="text-4xl font-bold text-purple-500 mb-2">JOHANNES</h1>
         <p className="text-lg font-semibold mb-6">Software Engineer, Web Developer, and UX/UI</p>
-        <p className="text-gray-400 max-w-xl mx-auto md:mx-0 mb-8">
-          I'm Johannes, a passionate and experienced developer with a strong background in the full development cycle of dynamic web projects and app development. I specialize in creating intuitive and user-friendly interfaces, and I'm
-          proficient in UX/UI design, ensuring that every project I work on is both functional and visually appealing.
+        <p className="text-gray-400 max-w-xl mx-auto md:mx-0 mb-8 text-justify">
+          I'm Johannes, a passionate and experienced developer with a strong background in the full development cycle of dynamic web projects and Android applications. I focus on building reliable, efficient, and scalable solutions that
+          meet real-world needs through clean code and modern technologies.
         </p>
 
         {/* Tombol Download CV */}
@@ -34,9 +34,9 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Bagian Gambar Profil */}
-      <div className="flex justify-center md:justify-end">
-        <div className="pulse-ring w-[400px] h-[400px] ml-0 md:ml-10 lg:ml-20 -mt-8">
+      {/* Bagian Gambar Profil (Hanya muncul di Desktop) */}
+      <div className="hidden md:flex justify-center md:justify-end">
+        <div className="pulse-ring w-[400px] h-[400px] ml-0 md:ml-10 lg:ml-20 -mt-8 relative">
           <Image src="/images/logo/propile.png" alt="Profile Picture" fill className="rounded-full object-cover" />
         </div>
       </div>

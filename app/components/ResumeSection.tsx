@@ -38,31 +38,25 @@ const ResumeSection = () => {
       <div className="text-center mb-10 mt-10">
         <h3 className="text-2xl font-bold mb-6 text-white">Why Hire Me</h3>
         <div className="grid md:grid-cols-4 gap-6">
-          {/* Workaholic */}
+          {/* Disiplin */}
           <div className="flex flex-col items-center">
             <div className="relative flex items-center justify-center w-20 h-20">
-              {/* Outer Circle */}
               <div className="absolute w-full h-full rounded-full border border-gray-700"></div>
-              {/* Inner Circle */}
               <div className="absolute w-16 h-16 rounded-full bg-gray-900 border-2 border-purple-700 flex items-center justify-center">
-                {/* Icon */}
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h12V4H6zm7 14h-2v-2h2v2zm0-4h-2V7h2v7z" />
+                  <path d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1zm1 11h4a1 1 0 0 1 0 2h-5a1 1 0 0 1-1-1V6a1 1 0 0 1 2 0z" />
                 </svg>
               </div>
             </div>
-            <h4 className="font-semibold text-white mt-4">Workaholic</h4>
-            <p className="text-gray-400 text-sm mt-2 text-center">I am a kind of person who can't just stand doing nothing. I always find time to do something productive.</p>
+            <h4 className="font-semibold text-white mt-4">Disiplin</h4>
+            <p className="text-gray-400 text-sm mt-2 text-center">I value time and consistency. Meeting deadlines is my top priority.</p>
           </div>
 
           {/* Communicative */}
           <div className="flex flex-col items-center">
             <div className="relative flex items-center justify-center w-20 h-20">
-              {/* Outer Circle */}
               <div className="absolute w-full h-full rounded-full border border-gray-700"></div>
-              {/* Inner Circle */}
               <div className="absolute w-16 h-16 rounded-full bg-gray-900 border-2 border-purple-700 flex items-center justify-center">
-                {/* Icon */}
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 2H4a2 2 0 00-2 2v16l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2zm-6 8h-4V8h4v2zm0-4h-4V4h4v2z" />
                 </svg>
@@ -75,11 +69,8 @@ const ResumeSection = () => {
           {/* Cooperative */}
           <div className="flex flex-col items-center">
             <div className="relative flex items-center justify-center w-20 h-20">
-              {/* Outer Circle */}
               <div className="absolute w-full h-full rounded-full border border-gray-700"></div>
-              {/* Inner Circle */}
               <div className="absolute w-16 h-16 rounded-full bg-gray-900 border-2 border-purple-700 flex items-center justify-center">
-                {/* Icon */}
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2a7 7 0 00-7 7 7 7 0 005.25 6.75v2.75H7v2h10v-2h-3.25v-2.75A7 7 0 0019 9a7 7 0 00-7-7z" />
                 </svg>
@@ -89,24 +80,22 @@ const ResumeSection = () => {
             <p className="text-gray-400 text-sm mt-2 text-center">Behind every successful project, there is great teamwork. I ensure to work cooperatively with everyone.</p>
           </div>
 
-          {/* Perfectionist */}
+          {/* Problem Solver */}
           <div className="flex flex-col items-center">
             <div className="relative flex items-center justify-center w-20 h-20">
-              {/* Outer Circle */}
               <div className="absolute w-full h-full rounded-full border border-gray-700"></div>
-              {/* Inner Circle */}
               <div className="absolute w-16 h-16 rounded-full bg-gray-900 border-2 border-purple-700 flex items-center justify-center">
-                {/* Icon */}
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2a10 10 0 0110 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2zm0 4a6 6 0 100 12 6 6 0 000-12z" />
+                  <path d="M19.14,12.94a7.07,7.07,0,0,0,0-1.88l2.11-1.65a.5.5,0,0,0,.12-.63l-2-3.46a.5.5,0,0,0-.61-.22l-2.49,1a6.93,6.93,0,0,0-1.63-.94l-.38-2.65A.5.5,0,0,0,14.71,3H9.29a.5.5,0,0,0-.49.42L8.42,6.1a6.93,6.93,0,0,0-1.63.94l-2.49-1a.5.5,0,0,0-.61.22l-2,3.46a.5.5,0,0,0,.12.63L4,11.06a7.07,7.07,0,0,0,0,1.88L1.89,14.59a.5.5,0,0,0-.12.63l2,3.46a.5.5,0,0,0,.61.22l2.49-1a6.93,6.93,0,0,0,1.63.94l.38,2.65a.5.5,0,0,0,.49.42h5.42a.5.5,0,0,0,.49-.42l.38-2.65a6.93,6.93,0,0,0,1.63-.94l2.49,1a.5.5,0,0,0,.61-.22l2-3.46a.5.5,0,0,0-.12-.63ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
                 </svg>
               </div>
             </div>
-            <h4 className="font-semibold text-white mt-4">Perfectionist</h4>
-            <p className="text-gray-400 text-sm mt-2 text-center">I have a strong intuition and deliver high-quality solutions consistently.</p>
+            <h4 className="font-semibold text-white mt-4">Problem Solver</h4>
+            <p className="text-gray-400 text-sm mt-2 text-center">I love solving challenges and always strive to deliver effective solutions.</p>
           </div>
         </div>
       </div>
+
       {/* End Why Hire Me Section */}
 
       {/* Tools and Skills Section */}
@@ -124,7 +113,7 @@ const ResumeSection = () => {
           ].map((tool, index) => (
             <div
               key={index}
-              className="bg-[#323131] p-4 w-36 h-36 rounded-lg flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)]"
+              className="bg-[#323131] p-4 sm:w-1/2 md:w-36 h-36 rounded-lg flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)]"
             >
               <img src={tool.icon} alt={tool.name} className="w-16 h-16 object-contain mb-3" />
               <p className="text-white-400 text-sm font-bold">{tool.name}</p>
@@ -141,7 +130,7 @@ const ResumeSection = () => {
           ].map((tool, index) => (
             <div
               key={index}
-              className="bg-[#323131] p-4 w-36 h-36 rounded-lg flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)]"
+              className="bg-[#323131] p-4 sm:w-1/2 md:w-36 h-36 rounded-lg flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)]"
             >
               <img src={tool.icon} alt={tool.name} className="w-16 h-16 object-contain mb-3" />
               <p className="text-white-400 text-sm font-bold">{tool.name}</p>

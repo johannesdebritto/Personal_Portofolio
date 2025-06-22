@@ -1,13 +1,11 @@
-"use client"; // Pastikan ini ada di awal untuk komponen client-side
+"use client";
 
 import React, { useState, useEffect } from "react";
 
 const AboutSection = () => {
-  // Gunakan state jika ada data yang perlu diperbarui di klien
   const [clientReady, setClientReady] = useState(false);
 
   useEffect(() => {
-    // Pastikan state untuk render dinamis hanya diatur di klien
     setClientReady(true);
   }, []);
 
@@ -17,11 +15,7 @@ const AboutSection = () => {
         {/* Gambar Profil */}
         <div className="flex-shrink-0 md:mr-8 mb-8 md:mb-0">
           <div className="border-4 border-purple-500 p-3 rounded-lg">
-            <img
-              src="/images/logo/fotobg.png" // Ganti dengan path gambar Anda
-              alt="Johannes"
-              className="w-72 h-72 md:w-96 md:h-96 rounded-lg object-cover" // Ukuran gambar disesuaikan
-            />
+            <img src="/images/logo/fotobg.png" alt="Johannes" className="w-72 h-72 md:w-96 md:h-96 rounded-lg object-cover" />
           </div>
         </div>
 
@@ -32,21 +26,21 @@ const AboutSection = () => {
             Johannes, <span className="text-purple-500">Innovative</span> Software Engineer
           </h1>
           <p className="text-gray-300 mb-6 text-justify leading-relaxed text-sm sm:text-base md:text-lg">
-            With over 1 year of experience in software and solutions development, I am a detail-oriented professional passionate about creating innovative and efficient digital solutions. I thrive on learning new concepts and applying them
-            to streamline development processes, driving organizational success. My expertise spans web development, app development, and UX/UI design, aiming to blend functionality with exceptional user experiences.
+            With around 3 years of experience in software development, I specialize in crafting web and Android applications that are efficient, scalable, and tailored to client needs. I am committed to writing clean, maintainable code and
+            always strive to stay up to date with the latest technologies to deliver impactful digital solutions.
           </p>
           <ul className="space-y-4 text-justify text-sm sm:text-base md:text-lg">
             <li className="flex items-start">
               <span className="text-green-500 mr-3">✅</span>
-              <p>Designed and developed responsive company profile websites, ensuring cross-platform compatibility and modern aesthetics.</p>
+              <p>Developed responsive websites using modern frameworks such as React and Next.js, optimized for performance and SEO.</p>
             </li>
             <li className="flex items-start">
               <span className="text-green-500 mr-3">✅</span>
-              <p>Created Android applications with intuitive interfaces and robust backends to meet specific client requirements.</p>
+              <p>Built Android applications with Flutter, integrating REST APIs and ensuring smooth functionality on various devices.</p>
             </li>
             <li className="flex items-start">
               <span className="text-green-500 mr-3">✅</span>
-              <p>Crafted user-centric designs for web and mobile platforms, ensuring an engaging and accessible user experience.</p>
+              <p>Collaborated with clients to plan, build, and maintain custom digital products that align with their business goals.</p>
             </li>
           </ul>
         </div>

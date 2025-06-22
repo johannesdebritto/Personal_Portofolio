@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     image: "/images/porto/codedev.png",
-    title: "PCodeDev",
+    title: "CodeDev",
     description: "An e-commerce site for Jas Akoding services and products.",
     type: "Website",
     link: "https://codedev-app.vercel.app/",
