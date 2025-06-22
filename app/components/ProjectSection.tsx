@@ -22,7 +22,7 @@ const projects = [
   {
     id: 3,
     image: "/images/porto/dompet.png",
-    title: "KasirPintar",
+    title: "DompetKu",
     description: "An app to record and manage financial data.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/Dompetku",
