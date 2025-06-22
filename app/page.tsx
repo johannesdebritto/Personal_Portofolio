@@ -4,8 +4,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ResumeSection from "./components/ResumeSection";
 import ProjectSection from "./components/ProjectSection";
-import TestimonialSection from "./components/TestimonialSection";
-import ContactForm from "./components/ContactForm";
+
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -26,13 +25,9 @@ export default function Home() {
         {/* Project Section */}
         <ProjectSection />
         {/* TestimonalSectio */}
-        <TestimonialSection/>
-        {/* Contact Section */}
-        <ContactForm />
 
         {/* Konten lain */}
         <Footer />
-        
       </main>
 
       {/* Footer
