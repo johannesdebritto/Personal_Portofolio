@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <header>
           <p className="text-gray-500 uppercase mb-4">Hello, My Name is</p>
           <h1 className="text-4xl font-bold text-purple-500 mb-2">JOHANNES</h1>
-          <h2 className="text-lg font-semibold mb-6">Software Engineer, Web Developer, and UX/UI</h2>
+          <h2 className="text-lg font-semibold mb-6">Android dan Web Developer</h2>
         </header>
 
         <p className="text-gray-400 max-w-xl mx-auto md:mx-0 mb-8 text-justify">
