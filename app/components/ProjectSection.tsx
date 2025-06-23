@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
-  // ... (tidak diubah, tetap sama)
   {
     id: 1,
     image: "/images/porto/codedev.png",
@@ -11,6 +10,7 @@ const projects = [
     description: "An e-commerce site for Jasa Coding services and products.",
     type: "Website",
     link: "https://codedev-app.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS"],
   },
   {
     id: 2,
@@ -19,6 +19,7 @@ const projects = [
     description: "A simple company profile for maggot farming.",
     type: "Web Application",
     link: "https://maggotbsfcolomadu.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS"],
   },
   {
     id: 3,
@@ -27,6 +28,7 @@ const projects = [
     description: "An app to record and manage financial data.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/Dompetku",
+    tags: ["Flutter", "SQLite"],
   },
   {
     id: 4,
@@ -35,6 +37,7 @@ const projects = [
     description: "An Application azimuth tracking tool.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/AZIMUTHTRACKER",
+    tags: ["Flutter"],
   },
   {
     id: 5,
@@ -43,6 +46,7 @@ const projects = [
     description: "A mobile app to scan items at events.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/ScanBarang_Frontend",
+    tags: ["Flutter", "Node.js"],
   },
   {
     id: 6,
@@ -51,14 +55,16 @@ const projects = [
     description: "An app for buying and ordering medicine.",
     type: "Mobile App",
     link: "https://github.com/johannesdebritto/TubesMobilePrograming_JUNIORCARE",
+    tags: ["Flutter", "SharedPreferences"],
   },
   {
     id: 7,
     image: "/images/porto/konimexxx.png",
     title: "Konimex Monitoring",
-    description: "An application for monitoring PT KONIMEX buildings using RFID and NFC scanning.",
+    description: "Monitoring app for PT KONIMEX buildings using RFID/NFC.",
     type: "Mobile App",
-    link: "https://github.com/johannesdebritto/MonitoringGuard-Konimex", // Ganti dengan link yang sesuai jika ada
+    link: "https://github.com/johannesdebritto/MonitoringGuard-Konimex",
+    tags: ["Flutter", "Node.js", "SQLite", "NFC"],
   },
 ];
 
@@ -67,7 +73,7 @@ const Portofolio = () => {
     <section id="portfolio" className="scroll-offset bg-black max-w-7xl mx-auto px-4 py-20" aria-labelledby="portfolio-heading">
       {/* Title */}
       <div className="text-center mb-10">
-        <h2 id="portfolio-heading" className="text-3xl font-bold mb-2">
+        <h2 id="portfolio-heading" className="text-3xl font-bold mb-2 text-white">
           Latest Works
         </h2>
         <p className="text-purple-500 text-xl">
@@ -78,17 +84,26 @@ const Portofolio = () => {
       {/* Grid Projects */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <article key={project.id} className="relative group w-full max-w-xs mx-auto overflow-hidden rounded-lg shadow-md cursor-pointer bg-white">
+          <article key={project.id} className="relative group w-full max-w-xs mx-auto overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white">
             <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`View project ${project.title}`} className="block">
               <Image src={project.image} alt={`Preview of ${project.title}`} width={400} height={200} className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 bg-black" priority={index === 0} />
             </Link>
 
             {/* Hover Overlay */}
-            <div className="absolute bottom-0 left-0 w-full h-full flex flex-col justify-end bg-black/0 group-hover:bg-black/70 transition-all duration-300">
+            <div className="absolute bottom-0 left-0 w-full h-full flex flex-col justify-end bg-black/0 group-hover:bg-black/80 transition-all duration-300">
               <div className="p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <p className="text-sm text-purple-300">{project.type}</p>
                 <h3 className="text-lg font-bold text-white">{project.title}</h3>
-                <p className="text-sm text-gray-300 mb-3">{project.description}</p>
+                <p className="text-sm text-gray-300 mb-2">{project.description}</p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {project.tags.map((tag, idx) => (
+                    <span key={idx} className="bg-purple-600 text-white text-xs font-medium px-2 py-0.5 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
                 <div className="flex justify-end">
                   <Link href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center text-sm text-purple-400 hover:underline hover:text-white transition" aria-label={`Visit ${project.title} project page`}>
