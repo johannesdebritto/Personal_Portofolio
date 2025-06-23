@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
+  // ... (tidak diubah, tetap sama)
   {
     id: 1,
     image: "/images/porto/codedev.png",
@@ -66,7 +67,9 @@ const Portofolio = () => {
     <section id="portfolio" className="scroll-offset bg-black max-w-7xl mx-auto px-4 py-20" aria-labelledby="portfolio-heading">
       {/* Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold mb-2">Latest Works</h2>
+        <h2 id="portfolio-heading" className="text-3xl font-bold mb-2">
+          Latest Works
+        </h2>
         <p className="text-purple-500 text-xl">
           Explore My Popular <span className="text-white">Projects</span>
         </p>
@@ -76,8 +79,7 @@ const Portofolio = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <article key={project.id} className="relative group w-full max-w-xs mx-auto overflow-hidden rounded-lg shadow-md cursor-pointer bg-white">
-            {/* Image */}
-            <Link href={project.link} target="_blank" rel="noopener noreferrer">
+            <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`View project ${project.title}`} className="block">
               <Image src={project.image} alt={`Preview of ${project.title}`} width={400} height={200} className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 bg-black" priority={index === 0} />
             </Link>
 
@@ -89,7 +91,7 @@ const Portofolio = () => {
                 <p className="text-sm text-gray-300 mb-3">{project.description}</p>
 
                 <div className="flex justify-end">
-                  <Link href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center text-sm text-purple-400 hover:underline hover:text-white transition">
+                  <Link href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center text-sm text-purple-400 hover:underline hover:text-white transition" aria-label={`Visit ${project.title} project page`}>
                     View
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" />
