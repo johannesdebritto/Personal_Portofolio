@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ResumeSection = () => {
   return (
@@ -30,8 +31,8 @@ const ResumeSection = () => {
           },
         ].map((service, i) => (
           <article key={i} className="bg-[#323131] p-6 rounded-lg text-center overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)] w-full mx-auto">
-            <div className="flex justify-center mb-6">
-              <img src={service.icon} alt={service.alt} className="w-14 h-14 object-contain" />
+            <div className="flex justify-center mb-6 relative w-14 h-14 mx-auto">
+              <Image src={service.icon} alt={service.alt} fill className="object-contain" sizes="56px" priority={false} />
             </div>
             <h3 className="text-lg font-semibold mb-4">{service.title}</h3>
             <p className="text-gray-400 text-base">{service.desc}</p>
@@ -104,7 +105,9 @@ const ResumeSection = () => {
               key={i}
               className="bg-[#323131] p-4 sm:w-1/2 md:w-36 h-36 rounded-lg flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)]"
             >
-              <img src={tool.icon} alt={tool.name} className="w-16 h-16 object-contain mb-3" />
+              <div className="relative w-16 h-16 mb-3">
+                <Image src={tool.icon} alt={tool.name} fill className="object-contain" sizes="64px" priority={false} />
+              </div>
               <p className="text-white-400 text-sm font-bold">{tool.name}</p>
             </div>
           ))}
@@ -121,7 +124,9 @@ const ResumeSection = () => {
               key={i}
               className="bg-[#323131] p-4 sm:w-1/2 md:w-36 h-36 rounded-lg flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)]"
             >
-              <img src={tool.icon} alt={tool.name} className="w-16 h-16 object-contain mb-3" />
+              <div className="relative w-16 h-16 mb-3">
+                <Image src={tool.icon} alt={tool.name} fill className="object-contain" sizes="64px" priority={false} />
+              </div>
               <p className="text-white-400 text-sm font-bold">{tool.name}</p>
             </div>
           ))}

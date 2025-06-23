@@ -14,8 +14,8 @@ const HeroSection: React.FC = () => {
         </header>
 
         <p className="text-gray-400 max-w-xl mx-auto md:mx-0 mb-8 text-justify">
-          I'm Johannes, a passionate and experienced developer with a strong background in the full development cycle of dynamic web projects and Android applications. I focus on building reliable, efficient, and scalable solutions that
-          meet real-world needs through clean code and modern technologies.
+          I&apos;m Johannes, a passionate and experienced developer with a strong background in the full development cycle of dynamic web projects and Android applications. I focus on building reliable, efficient, and scalable solutions
+          that meet real-world needs through clean code and modern technologies.
         </p>
 
         {/* Tombol Download CV */}
