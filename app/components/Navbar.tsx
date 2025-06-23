@@ -61,7 +61,6 @@ const Navbar = () => {
             { href: "#about", label: "About" },
             { href: "#resume", label: "Resume" },
             { href: "#project", label: "Project" },
-            { href: "#testimoni", label: "Testimoni" },
           ].map(({ href, label }) => (
             <Link key={href} href={href} onClick={handleLinkClick} className="text-white text-xl hover:text-purple-500 duration-200 hover:scale-110 transition-transform">
               {label}
