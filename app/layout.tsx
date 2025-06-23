@@ -1,4 +1,4 @@
-// app/layout.tsx atau app/layout.js (Tergantung projectmu)
+// app/layout.tsx
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -15,13 +15,13 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Dynamic metadata function
+// Metadata tetap boleh disediakan
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "JohannesWorks", // Bisa kamu ubah dinamis nanti via param jika mau
+    title: "JohannesWorks",
     description: "Personal portfolio of Johannes deBritto",
     icons: {
-      icon: "/logos.png", // Pastikan file ini ada di public/logos.png
+      icon: "/images/logos.ico", // Sesuaikan path favicon baru
     },
   };
 }
@@ -33,6 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Tambahkan favicon secara manual */}
+        <link rel="icon" href="/images/logos.ico" type="image/x-icon" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
