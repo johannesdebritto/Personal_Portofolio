@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
       {/* Gambar Profil */}
       <div className="hidden md:flex justify-center md:justify-end">
         <figure className="pulse-ring w-[400px] h-[400px] ml-0 md:ml-10 lg:ml-20 -mt-8 relative" aria-label="Johannes profile picture">
-          <Image src="/images/logo/profile.jpg" alt="Profile picture of Johannes" fill className="rounded-full object-cover" priority />
+          <Image src="/images/logo/prof.png" alt="Profile picture of Johannes" fill className="rounded-full object-cover" priority />
         </figure>
       </div>
     </section>
